@@ -47,16 +47,16 @@
       return new Promise(function(resolve, reject) {
         if(options.reverse == true){
           for(let i=0;i<linesNumber;i++){
-            let colorNumber = endColor - i*gap
+            let colorNumber = endColor - (i+1)*gap
             $el.find('.rainbowCreate > div:nth-child(' + parseInt(i+1) + ')').css({
-              'background-color': 'hsla(' + colorNumber + ',100%,50%,1)'
+              'background-color': 'hsla(' + colorNumber + ',' + options.saturation + '%,' + options.light + '%,' + options.alpha + ')'
             })
           }
         }else{
           for(let i=0;i<linesNumber;i++){
-            let colorNumber = startColor + i*gap
+            let colorNumber = startColor + (i+1)*gap
             $el.find('.rainbowCreate > div:nth-child(' + parseInt(i+1) + ')').css({
-              'background-color': 'hsla(' + colorNumber + ',100%,50%,1)'
+              'background-color': 'hsla(' + colorNumber + ',' + options.saturation + '%,' + options.light + '%,' + options.alpha + ')'
             })
           }
         }
