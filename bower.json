@@ -1,0 +1,29 @@
+{
+  "name": "rainbowCreate",
+  "authors": [
+    "daniel-llach <daniel.llach@gmail.com>"
+  ],
+  "description": "A jquery component that allows you to create random rainbows textures in to divs",
+  "main": [
+    "components/rainbowCreate.js",
+    "components/rainbowCreate.css"
+  ],
+  "moduleType": "es6",
+  "keywords": [
+    "mockup",
+    "devices",
+    "show"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.1",
+    "underscore": "latest"
+  }
+}

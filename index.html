@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>rainbowCreate</title>
+
+    <!-- rainbowCreate dependencies -->
+    <script src="./bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
+    <script src="./bower_components/underscore/underscore-min.js" type="text/javascript"></script>
+    <script src="./component/rainbowCreate.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="./component/rainbowCreate.css">
+
+    <!-- demo page -->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+  <div id="example"></div>
+
+  <script type="text/javascript">
+    // init mockups
+    $('#example').rainbowCreate({
+      direction: "vertical",
+      reverse: false,
+      linesWidth: 80,
+      colorRank: [0,110] // 0=red, 60=yellow, 120=green, 180=light blue, 240=blue, 300=pink
+    });
+  </script>
+</body>

@@ -1,2 +1,2 @@
 # rainbowCreate
-A jquery plugin that allows you to create random rainbows textures
+A jquery component that allows you to create random rainbows textures in to divs.
