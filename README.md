@@ -14,3 +14,9 @@ $('#example').rainbowCreate({
   alpha: 1
 });
 ```
+
+## Install
+
+```
+bower install rainbowCreate
+```
