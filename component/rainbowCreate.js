@@ -10,7 +10,6 @@
   let api = {
     init : function(options) {
       const $el = $(this);
-      // $el.addClass('rainbowCreate');
       methods.initRainbowCreate($el, options);
     },
     destroy: function(){
@@ -21,8 +20,6 @@
   // Private methods
   let methods = {
     initRainbowCreate: function($el, options){
-      console.log("options: ", options);
-
       // get plugin template
       let rainbowCreate = methods.getTemplate('rainbowCreate.html');
       rainbowCreate.then((res) => {
@@ -72,7 +69,6 @@
         let containerWidth = $el.width();
         let actualWidth = 0;
         while(actualWidth < containerWidth){
-          console.log("direction: ", direction);
           if(direction == 'vertical'){
             $rainbow.append('<div class="rainbowLine vertical" style="width:' + linesWidth + 'px;"></div>');
           }else if(direction == 'horizontal'){
@@ -97,7 +93,7 @@
 
   // Events
   var events = {
-
+    // add some events
   };
 
   // jquery component stuff
